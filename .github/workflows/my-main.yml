@@ -37,3 +37,26 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+        
+        
+     #My Steps
+     jobs:
+       my-testing: 
+       runs-on: ubuntu-latest
+       
+       steps:
+       - name: Print Hello mesaage  
+        run: echo "Hello World" from testing
+        
+      my_devlop:
+       run-on: ubuntu-latest
+       
+       steps:
+       - name: "Print Hello Meessage"
+         run : echo "Hello Worl from Deploy job"
+     
+        
+        
+        
+        
+        
