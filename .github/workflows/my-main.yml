@@ -1,10 +1,20 @@
 name: Vurgun Test
 # This workflow is triggered on pushes to the repository.
+env:
+  Application_name: "My desk"
+  PACKAGE_Name: "flask_deploy_ver-${{github.sha}}"
+
+
+
+
+
 on: [push]
 
 jobs:
   build:
     # Job name is Greeting
+      
+      
     name: My_test
     # This job runs on Linux
     runs-on: ubuntu-latest
@@ -12,3 +22,6 @@ jobs:
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: Hello world
         uses: actions/hello-world-javascript-action@v1
+        id: 
+    
+    
