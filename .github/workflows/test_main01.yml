@@ -41,7 +41,7 @@ jobs:
 
       # Run tests
       - name: Run Test
-        uses: GabrielBB/xvfb-action@v1.0
+        uses: vhaciyev-action@v1.0
         with:
           run: yarn coveralls
       
